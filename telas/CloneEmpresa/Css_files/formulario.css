@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrant", sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: rgb(87, 102, 93);
+    height: 100%;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    margin: 30%;
+    font-style: italic;
+    color: #e7e7e7;
+}
+
+.form{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 35px;
+    background: linear-gradient(to top left, #034e1391, #13e2817c);
+    margin: 0 auto;
+    width: 30%;
+    height: 400px;
+}
+.form h2{
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.form h2::after{
+    content: '';
+    display: block;
+    margin: 10px auto;
+    border-bottom: 3px solid #ffffff;
+    width: 25%;
+}
+.form input{
+    display: block;
+    margin: 20px auto;
+    box-sizing: content-box;
+    border: 2px solid #1ce2f0;
+    border-radius: 25px;
+    width: 75%;
+    height: 40px;
+    padding: 2px 5px;
+    font-size: 16pt;
+    transition: .2s;
+    outline: none;
+    background-color: transparent;
+    text-indent: 10px;
+}
+.form input[type="text"]:focus,
+.form input[type="password"]:focus{
+    background-color: #1ce2f0;
+}
+.form input[type="text"]::placeholder,
+.form input[type="password"]::placeholder{
+    font-size: 16pt;
+    color: #ffffff;
+    text-indent: 10px;
+}
+.form input[type="submit"]{
+    background-color: transparent;
+    color: #1ce2f0;
+}
+.form input[type="submit"]:hover{
+    background-color: #1c91f0b6;
+    color: #ffffff;
+    transition: 1s;
+}
+@media screen and (max-width: 900px){
+    .form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 400px){
+    .form{
+        width: 85%;
+    }
+}

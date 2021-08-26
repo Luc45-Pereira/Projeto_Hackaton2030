@@ -2,19 +2,20 @@
 <html>
     <head>
         <title>Projeto Hackaton</title>
-        <link rel="stylesheet" type="text/css" href="telas/Css_files/formulario.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="Css_files/formulario.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
         <meta http-equiv=”Content-Type” content=”text/html; charset="utf-8"/>
         <script type="text/javascript" src="http://livejs.com/live.js"></script>
     </head>
     <body>
         <section class="form">
-            <form method="POST" action="telas/PHP/Login.php">
-                <h2>Login</h2>
-                <input type="text" name="nome" placeholder="E-mail ou usuário" id="nome">
+            <form method="POST" action="PHP/cadastro.php">
+                <h2>Cadastro</h2>
+                <input type="text" name="cpf" placeholder="Cpf" id="cpf">
+                <input type="text" name="nome" placeholder="Nome" id="nome">
                 <input type="password" name="senha" placeholder="Senha" id="senha">
                 <input type="submit" value="Logar">
-                <a href="telas/CadastroUser.html">Cadastrar-se</a>
+                <a href="CadastroUser.html">Cadastrar-se</a>
             </form>
         </section>
     </body>
